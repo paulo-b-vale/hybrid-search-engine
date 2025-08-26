@@ -1,135 +1,103 @@
-# 🔍 MS MARCO Hybrid Retrieval System
+# 🤖 Autonomous AI Agent System for Hybrid Search & Synthesis
 
-## Advanced Information Retrieval with Dense-Sparse Fusion
+## A Multi-Agent System that Powers a Sophisticated Q&A Application
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![FAISS](https://img.shields.io/badge/FAISS-IVF--Optimized-green)](https://github.com/facebookresearch/faiss)
 [![Transformers](https://img.shields.io/badge/🤗-Transformers-yellow)](https://huggingface.co/transformers/)
-[![Grade](https://img.shields.io/badge/University%20Grade-10%2F10-gold)](#)
-
-> **Academic Achievement**: This project was developed as my TCC1 (Thesis) at the Federal University of Brazil, achieving a **perfect 10/10 grade**. It demonstrates advanced information retrieval techniques with state-of-the-art performance on the MS MARCO dataset.
-
-## 🎯 Project Overview
-
-This system implements a sophisticated **hybrid information retrieval architecture** that combines the semantic understanding of dense retrieval with the lexical precision of sparse retrieval methods. The solution achieves exceptional performance on the MS MARCO passage ranking dataset through intelligent algorithmic fusion and computational optimization.
-
-### 🏆 Key Achievements
-
-- **Dense Retrieval**: MAP of **95.14%** with **99.87% overall recall**
-- **Hybrid System**: Maintains **93.25% MAP** while optimizing computational efficiency
-- **Scalability**: Processes **8.8M+ documents** with sub-second query response times
-- **Academic Recognition**: Perfect score (10/10) thesis project
-
-## 🏗️ Architecture & Technical Innovation
-
-### 1. Dense Retrieval Engine
-- **Model**: Sentence-BERT (all-MiniLM-L6-v2) for semantic embeddings
-- **Index Structure**: FAISS IVF (Inverted File with Virtual Centroids)
-- **Optimization**: Dynamic centroid calculation for optimal memory-performance balance
-- **Performance**: 99.24% Recall@10, 95.29% MRR@10
-
-### 2. Sparse Retrieval (BM25)
-- **Implementation**: Custom optimized BM25 with proper vectorization
-- **Features**: Document frequency caching, term weighting optimization
-- **Performance**: 91.43% Recall@10, solid baseline for lexical matching
-
-### 3. Hybrid Fusion Strategy
-**The core innovation**: A computationally intelligent hybrid approach that:
-
-- **Phase 1**: Dense retrieval identifies **500 semantic candidates**
-- **Phase 2**: BM25 re-ranking for lexical precision refinement
-- **Phase 3**: Score normalization and weighted fusion (α=0.5)
-
-**Why 500 candidates?** This sweet spot minimizes computational cost while preserving 99%+ of relevant documents, demonstrating deep understanding of the precision-recall trade-off in large-scale retrieval.
-
-## 🔬 Technical Deep Dive
-
-### FAISS IVF Implementation
-```python
-# Intelligent centroid calculation
-n_list = min(max(int(4 * √num_docs), 4000), num_docs // 50)
-
-# IVF index with optimized probe settings
-index = faiss.IndexIVFFlat(quantizer, dimension, n_list)
-index.nprobe = min(100, n_list // 2)  # Dynamic probe adjustment
-```
-
-### Memory-Efficient Processing
-- **Batch Processing**: Chunked embedding generation (25K docs/batch on GPU)
-- **Progressive Caching**: Intermediate data persistence for fault tolerance
-- **Memory Management**: Strategic garbage collection and CUDA cache clearing
-
-### Computational Optimization
-- **Multi-threading**: Parallel document processing and tokenization
-- **Vectorized Operations**: NumPy-optimized BM25 scoring
-- **Index Persistence**: Smart caching system for repeated evaluations
-
-## 📊 Experimental Results
-
-### Performance Metrics (6,980 MS MARCO Dev Queries)
-
-| Method | MAP ↑ | Recall@10 ↑ | MRR@10 ↑ | NDCG@10 ↑ | Latency (s) ↓ |
-|--------|-------|--------------|----------|-----------|---------------|
-| **Dense** | **95.14%** | **99.24%** | **95.29%** | **96.20%** | 55.8 |
-| BM25 | 81.24% | 91.43% | 81.61% | 83.73% | 59.2 |
-| **Hybrid** | **93.25%** | **99.28%** | **93.50%** | **94.82%** | 127.5 |
-
-### Key Insights
-- **Dense retrieval dominance**: Superior semantic understanding leads to exceptional MAP scores
-- **Hybrid efficiency**: Maintains 98% of dense performance while providing computational flexibility
-- **Scalability**: Linear performance scaling across document collection sizes
-
-## 🛠️ Implementation Highlights
-
-### Advanced Features
-- **Robust Data Loading**: Multiple fallback mechanisms for dataset acquisition
-- **Error Resilience**: Comprehensive exception handling and recovery systems  
-- **Evaluation Framework**: Standard TREC metrics implementation (MAP, MRR, NDCG)
-- **Progress Monitoring**: Real-time logging and performance tracking
-
-### Code Quality
-- **Type Annotations**: Complete type hinting for maintainability
-- **Documentation**: Comprehensive docstrings and inline comments
-- **Modularity**: Clean separation of concerns across retrieval methods
-- **Testing**: Extensive validation on standard IR benchmarks
-
-## 🚀 Technical Skills Demonstrated
-
-### Machine Learning & NLP
-- Transformer-based semantic embeddings
-- Information Retrieval metrics and evaluation
-- Large-scale text processing and normalization
-- Neural ranking and fusion techniques
-
-### High-Performance Computing
-- FAISS vector similarity search optimization
-- Memory-efficient batch processing
-- GPU acceleration and resource management
-- Distributed processing considerations
-
-### Software Engineering
-- Production-ready Python development
-- Exception handling and error recovery
-- Caching and persistence strategies
-- Performance profiling and optimization
-
-## 📈 Future Enhancements
-
-- **Neural Re-ranking**: Integration of cross-encoder models for final ranking
-- **Query Expansion**: Automated query enrichment strategies
-- **Multi-Modal Retrieval**: Extension to document-image retrieval
-- **Distributed Scaling**: Kubernetes-based horizontal scaling
-
-## 🎓 Academic Context
-
-This project represents comprehensive research in information retrieval, demonstrating:
-- **Literature Review**: Integration of state-of-the-art dense and sparse methods
-- **Experimental Design**: Rigorous evaluation on standard benchmarks
-- **Technical Innovation**: Novel hybrid fusion with computational optimization
-- **Academic Writing**: Thorough documentation and results analysis
-
-**Grade Received**: 10/10 from Federal University of Brazil
+[![Thesis Grade](https://img.shields.io/badge/University%20Thesis-10%2F10-gold)](#)
+[![Presentation Grade](https://img.shields.io/badge/Thesis%20Presentation-10%2F10-brightgreen)](#)
 
 ---
 
-*This project showcases advanced technical skills in machine learning, information retrieval, and large-scale system design - demonstrating readiness for senior engineering roles in AI/ML and search technologies.*
+### 🚀 Live Application Demo
+
+This video shows the final application in action. The system uses a team of six specialized AI agents to process a user's query and generate a comprehensive, source-backed answer.
+
+[![Watch the Demo Video](URL_OF_YOUR_THUMBNAIL_IMAGE.jpg)](URL_OF_YOUR_VIDEO)
+
+**[Watch the 1:52 minute video demo here](URL_OF_YOUR_VIDEO)**
+
+---
+
+### 🎯 Project Overview
+
+**From Thesis to Application**: This project evolved from my **Thesis I (TCC1) at the Federal University of Piauí (UFPI)**, where both the written article and the final presentation earned a **perfect 10/10 grade**. The work has since been expanded into this fully-functional, multi-agent Q&A system.
+
+This is not just a search index; it's a sophisticated **multi-agent AI system** designed to deliver intelligent and reliable answers. When a user asks a question, a workflow is orchestrated between six specialized agents, each handling a critical part of the process from retrieval to final answer synthesis.
+
+The system's foundation is a powerful **hybrid retrieval engine** that fuses dense (semantic) and sparse (lexical) search, achieving state-of-the-art performance on the 8.8M+ document MS MARCO dataset.
+
+---
+
+### 🏗️ The Six-Agent Architecture
+
+The system's intelligence is distributed across six collaborative agents that form a robust processing pipeline. This agent-based design allows for complex, multi-step reasoning.
+
+
+
+1.  **🎯 The Coordinator Agent**: Analyzes the initial query to understand user intent and plans the optimal execution strategy for the other agents.
+2.  **🔍 The Retrieval Agent**: Executes the hybrid search plan, querying the high-performance FAISS and BM25 indices to find the most relevant source documents.
+3.  **🔬 The Content Analyzer Agent**: Scans the retrieved documents to identify and extract key themes and concepts, providing a summarized context.
+4.  **🔧 The Context Processor Agent**: intelligently selects and condenses the most critical information from the analyzed content, preparing a perfectly optimized context for the language model.
+5.  **🧠 The Answer Synthesizer Agent**: Takes the optimized context and uses a powerful generative model (like Gemini) to formulate a comprehensive, well-written, and coherent answer.
+6.  **✅ The Quality Validator Agent**: Assesses the generated answer for quality, relevance, and factual consistency against the source documents, assigning a final quality score.
+
+---
+
+### ⚡ Core Engine: The Hybrid Retrieval System
+
+The agents are powered by a best-in-class retrieval engine that was the focus of my 10/10 graded thesis. It combines a custom-optimized BM25 with a highly-tuned FAISS IVF index for semantic search.
+
+#### Performance Metrics (on 6,980 MS MARCO Dev Queries)
+
+| Method          | MAP ↑      | Recall@10 ↑ | MRR@10 ↑   | NDCG@10 ↑  | Latency (s) ↓ |
+| :-------------- | :--------: | :---------: | :--------: | :--------: | :-----------: |
+| **Dense (FAISS)** | **95.14%** | **99.24%** | **95.29%** | **96.20%** | 55.8          |
+| **Sparse (BM25)** | 81.24%   | 91.43%    | 81.61%   | 83.73%   | 59.2          |
+| **Hybrid Fusion** | **93.25%** | **99.28%** | **93.50%** | **94.82%** | 127.5         |
+
+---
+
+### 🛠️ About This Code Repository
+
+Please note: For proprietary reasons, this repository does **not** contain the full codebase for the multi-agent orchestration logic or the frontend application.
+
+The code provided here is a clean, production-ready implementation of the **core hybrid retrieval engine** that powers the **Retrieval Agent**. It contains the complete, high-performance FAISS and BM25 systems developed for my thesis, demonstrating the foundational layer upon which the full application is built.
+
+---
+
+### 🚀 Technical Skills Demonstrated
+
+#### AI Agent & System Design
+- Autonomous Agent Workflows
+- Multi-Agent Collaboration & Orchestration
+- Generative AI Synthesis & Validation
+- Complex System Architecture
+
+#### Machine Learning & NLP
+- Transformer-based Semantic Embeddings
+- Information Retrieval Metrics (MAP, MRR, NDCG)
+- Large-scale Text Processing (8.8M+ Docs)
+- Neural Ranking and Fusion Techniques
+
+#### High-Performance Computing & Software Engineering
+- FAISS Vector Search Optimization
+- Memory-Efficient Batch Processing & Caching
+- GPU Acceleration & Resource Management
+- Production-Ready Python & API Design
+
+---
+
+### 🎓 Academic Context & Future Work
+
+This project represents comprehensive research and practical application in AI, demonstrating:
+- **State-of-the-Art Integration**: Combining retrieval and generative AI.
+- **Rigorous Evaluation**: Thesis work validated on standard benchmarks.
+- **Technical Innovation**: A novel, efficient multi-agent workflow.
+
+Future enhancements include integrating neural re-rankers, automated query expansion, and scaling the system in a distributed environment.
+
+---
+
+*This project showcases a deep, end-to-end capability in designing, building, and evaluating complex AI systems—from foundational retrieval algorithms to sophisticated agentic applications.*
