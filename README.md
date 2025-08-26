@@ -17,7 +17,7 @@ This video shows the final application in action. The system uses a team of six 
 <img width="1366" height="646" alt="image" src="https://github.com/user-attachments/assets/8363b51d-803b-4d63-beca-5c81be09a87a" />
 
 
-**[Watch the 1:52 minute video demo here]([URL_OF_YOUR_VIDEO](https://youtu.be/NGxzmgncRvg))**
+[Watch the 1:52 minute video demo here](https://youtu.be/NGxzmgncRvg)
 
 ---
 
