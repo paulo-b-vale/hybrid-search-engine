@@ -14,8 +14,8 @@
 
 This video shows the final application in action. The system uses a team of six specialized AI agents to process a user's query and generate a comprehensive, source-backed answer.
 
-[![Watch the Demo Video]img width="1366" height="646" alt="image" src="https://github.com/user-attachments/assets/8363b51d-803b-4d63-beca-5c81be09a87a" />
-(URL_OF_YOUR_VIDEO)
+<img width="1366" height="646" alt="image" src="https://github.com/user-attachments/assets/8363b51d-803b-4d63-beca-5c81be09a87a" />
+
 
 **[Watch the 1:52 minute video demo here](URL_OF_YOUR_VIDEO)**
 
