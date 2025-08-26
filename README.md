@@ -32,10 +32,13 @@ The system's foundation is a powerful **hybrid retrieval engine** that fuses den
 
 ### 🏗️ The Six-Agent Architecture
 
-The system's intelligence is distributed across six collaborative agents that form a robust processing pipeline. This agent-based design allows for complex, multi-step reasoning.
+The system's intelligence is distributed across six collaborative agents. I've created a live, interactive webpage to visualize and explain the entire workflow and the technologies used.
 
+[![Interactive Architecture Website](URL_to_your_screenshot.png)](https://your-username.github.io/your-repo-name/)
 
+**[Click here to explore the live, interactive diagram](https://your-username.github.io/your-repo-name/)**
 
+#### Agent Roles:
 1.  **🎯 The Coordinator Agent**: Analyzes the initial query to understand user intent and plans the optimal execution strategy for the other agents.
 2.  **🔍 The Retrieval Agent**: Executes the hybrid search plan, querying the high-performance FAISS and BM25 indices to find the most relevant source documents.
 3.  **🔬 The Content Analyzer Agent**: Scans the retrieved documents to identify and extract key themes and concepts, providing a summarized context.
