@@ -35,9 +35,10 @@ The system's foundation is a powerful **hybrid retrieval engine** that fuses den
 
 The system's intelligence is distributed across six collaborative agents. I've created a live, interactive webpage to visualize and explain the entire workflow and the technologies used.
 
-[![Interactive Architecture Website](URL_to_your_screenshot.png)](https://your-username.github.io/your-repo-name/)
+<img width="1366" height="645" alt="{92A2895A-AC5F-4425-828C-AE56DAA0CB38}" src="https://github.com/user-attachments/assets/fe9f9917-105e-4e11-89d1-f5259fdfba4e" />
+(https://your-username.github.io/your-repo-name/)
 
-**[Click here to explore the live, interactive diagram](https://your-username.github.io/your-repo-name/)**
+**[Click here to explore the live, interactive diagram]([https://your-username.github.io/your-repo-name/](https://paulo-b-vale.github.io/hybrid-search-engine/)**
 
 #### Agent Roles:
 1.  **🎯 The Coordinator Agent**: Analyzes the initial query to understand user intent and plans the optimal execution strategy for the other agents.
