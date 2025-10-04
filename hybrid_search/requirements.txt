@@ -1,0 +1,30 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+redis==5.0.1
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.23
+alembic==1.13.1
+pydantic==2.5.0
+pydantic-settings==2.1.0
+requests==2.31.0
+
+# Search and AI dependencies
+opensearch-py>=2.4.0
+sentence-transformers>=2.2.2
+google-generativeai>=0.8.5
+tiktoken>=0.5.2
+numpy>=1.26.0
+llama-index[downloaders]==0.10.20
+
+# Workflow orchestration
+langgraph>=0.2.0
+langchain>=0.2.0
+
+# Additional utilities
+python-dotenv>=1.0.0
+nltk==3.8.1
+dspy-ai==2.6.27

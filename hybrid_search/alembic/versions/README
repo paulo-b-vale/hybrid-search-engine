@@ -1,0 +1,3 @@
+This folder contains Alembic migration scripts for the hybrid_search database.
+- 0001_initial_users_sessions.py: Baseline for users and user_sessions tables
+- 0002_add_chat_tables.py: Adds chat_sessions and chat_messages tables
